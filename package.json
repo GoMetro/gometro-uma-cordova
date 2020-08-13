@@ -10,5 +10,8 @@
     "license": "MIT",
     "devDependencies": {
         "@types/cordova": "0.0.34"
+    },
+    "dependencies": {
+        "async": "^3.2.0"
     }
 }
