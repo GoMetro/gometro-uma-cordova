@@ -34,4 +34,23 @@
 
         <framework src="com.gometro.uma:gometro-uma-android:1.0.2"/>
     </platform>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="GoMetroUma">
+                <param name="ios-package" value="c" onload="true" />
+            </feature>
+        </config-file>
+
+        <header-file src="platform/ios/SentryCordova.h" />
+        <source-file src="platform/ios/SentryCordova.m" />
+
+        <podspec>
+            <pods>
+                <pod git="https://github.com/GoMetro/gometro-uma-ios.git" tag="1.1.1"/>
+            </pods>
+        </podspec>
+    </platform>
+
 </plugin>
