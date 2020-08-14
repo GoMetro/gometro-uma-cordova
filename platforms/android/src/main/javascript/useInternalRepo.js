@@ -10,7 +10,7 @@ module.exports = (context) => {
     const gradleRepo = `maven { url "${repoUrl}" }`;
 
     return new Promise((resolve, reject) => {
-        const platformRoot = path.join(context.opts.projectRoot, "platforms/android");
+        const platformRoot = path.join(context.opts.projectRoot, "platforms/android/app");
 
         const gradleFiles = findGradleFiles(platformRoot);
 
