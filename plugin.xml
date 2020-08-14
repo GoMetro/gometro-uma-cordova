@@ -32,7 +32,7 @@
         <source-file src="platforms/android/src/main/java/com/gometroapp/uma/GoMetroUmaCordova.java"
                      target-dir="src/com/gometroapp/uma/"/>
 
-        <framework src="com.gometroapp.uma:gometro-uma-android:1.0.2"/>
+        <framework src="com.gometroapp.uma:gometro-uma-android:1.1.1"/>
     </platform>
 
     <!-- ios -->
