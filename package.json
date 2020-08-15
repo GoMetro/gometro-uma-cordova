@@ -1,6 +1,6 @@
 {
     "name": "gometro-uma-cordova",
-    "version": "0.0.15",
+    "version": "0.0.16",
     "description": "",
     "main": "src/js/gometro-uma.js",
     "scripts": {
