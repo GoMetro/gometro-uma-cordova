@@ -39,7 +39,7 @@
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="GoMetroUma">
-                <param name="ios-package" value="c" onload="true" />
+                <param name="ios-package" value="GoMetroUmaCordova" onload="true" />
             </feature>
         </config-file>
 
