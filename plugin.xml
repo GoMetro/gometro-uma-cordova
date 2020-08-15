@@ -43,8 +43,8 @@
             </feature>
         </config-file>
 
-        <header-file src="platform/ios/Sources/GoMetroUmaCordova/GoMetroUmaCordova.h" />
-        <source-file src="platform/ios/Sources/GoMetroUmaCordova/GoMetroUmaCordova.m" />
+        <header-file src="platforms/ios/Sources/GoMetroUmaCordova/GoMetroUmaCordova.h" />
+        <source-file src="platforms/ios/Sources/GoMetroUmaCordova/GoMetroUmaCordova.m" />
 
         <podspec>
             <pods>
