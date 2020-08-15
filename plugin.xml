@@ -47,6 +47,9 @@
         <source-file src="platforms/ios/Sources/GoMetroUmaCordova/GoMetroUmaCordova.m" />
 
         <podspec>
+            <config>
+                <source url="https://cdn.cocoapods.org/"/>
+            </config>
             <pods>
                 <pod git="https://github.com/GoMetro/gometro-uma-ios.git" tag="1.1.1"/>
             </pods>
