@@ -2,15 +2,12 @@
     "name": "gometro-uma-cordova",
     "version": "0.0.17",
     "description": "",
-    "main": "src/js/gometro-uma.js",
+    "main": "src/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",
     "license": "MIT",
-    "devDependencies": {
-        "@types/cordova": "0.0.34"
-    },
     "dependencies": {
         "async": "^3.2.0"
     }

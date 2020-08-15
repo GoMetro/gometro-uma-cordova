@@ -13,7 +13,7 @@
         <engine name="cordova-android" version=">=3.5.0"/>
     </engines>
 
-    <js-module src="src/js/gometro-uma.js" name="GoMetroUma">
+    <js-module src="src/index.js" name="GoMetroUma">
         <clobbers target="GoMetroUma"/>
     </js-module>
 

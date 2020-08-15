@@ -26,8 +26,7 @@ public class GoMetroUmaCordova extends CordovaPlugin {
     private final GoMetroUma goMetroUma = GoMetroUma.Companion.getShared();
     private final CompositeDisposable disposable = new CompositeDisposable();
 
-    private String mobidotUsername;
-    private String mobidotPassword;
+    private String goMetroToken;
 
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         super.initialize(cordova, webView);
@@ -39,8 +38,7 @@ public class GoMetroUmaCordova extends CordovaPlugin {
                            final CallbackContext callbackContext) throws JSONException {
 
         if (action.equals("init")) {
-            this.mobidotUsername = args.getString(0);
-            this.mobidotPassword = args.getString(1);
+            this.goMetroToken = args.getString(0);
 
             callbackContext.sendPluginResult(new PluginResult(Status.OK));
         } else {
@@ -62,8 +60,7 @@ public class GoMetroUmaCordova extends CordovaPlugin {
                 .init(
                     context,
                     className != null ? className : "",
-                    this.mobidotUsername,
-                    this.mobidotPassword
+                    this.goMetroToken
                 )
                 .subscribeWith(
                     new DisposableSingleObserver<Object>() {
@@ -76,7 +73,7 @@ public class GoMetroUmaCordova extends CordovaPlugin {
                         public void onError(Throwable e) {
                             String message = e.getMessage();
                             if (message != null) {
-                                Log.e("GoMetroSDK", message);
+                                Log.e("GoMetroUma", message);
                             }
                         }
                     }
