@@ -1,6 +1,6 @@
 #import <Cordova/CDVPlugin.h>
 
-@interface SentryCordova : CDVPlugin {
+@interface GoMetroUmaCordova : CDVPlugin {
 }
 
 - (void)init:(CDVInvokedUrlCommand *)command;
