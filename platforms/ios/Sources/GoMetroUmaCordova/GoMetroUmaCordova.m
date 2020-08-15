@@ -11,12 +11,12 @@ NSString *goMetroUmaToken;
 }
 
 - (void)init:(CDVInvokedUrlCommand *)command {
-    *goMetroUmaToken = [command.arguments objectAtIndex:0];
+    goMetroUmaToken = [command.arguments objectAtIndex:0];
 }
 
 - (void)didFinishLaunchingWithOptions:(NSNotification*)notification
 {
-    [GoMetro.shared initialiseWithToken:@goMetroUmaToken];
+    [GoMetroUma.shared initialiseWithToken:@goMetroUmaToken];
 }
 
 @end
