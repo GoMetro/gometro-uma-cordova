@@ -38,6 +38,8 @@
                      target-dir="src/com/gometroapp/uma/"/>
 
         <framework src="com.gometroapp.uma:gometro-uma-android:1.1.1"/>
+        <framework src="io.reactivex.rxjava2:rxandroid:2.1.1"/>
+        <framework src="io.reactivex.rxjava2:rxjava:2.2.19"/>
     </platform>
 
     <!-- ios -->
