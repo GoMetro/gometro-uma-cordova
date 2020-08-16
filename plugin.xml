@@ -68,6 +68,12 @@
             <string>$IOS_USAGE_DESCRIPTION</string>
         </config-file>
 
+        <config-file target="*-Info.plist" parent="UIBackgroundModes">
+            <array>
+                <string>location</string>
+            </array>
+        </config-file>
+
         <header-file src="platforms/ios/Sources/GoMetroUmaCordova/GoMetroUmaCordova.h" />
         <source-file src="platforms/ios/Sources/GoMetroUmaCordova/GoMetroUmaCordova.m" />
 
