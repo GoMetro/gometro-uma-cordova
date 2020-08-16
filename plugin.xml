@@ -32,7 +32,7 @@
         </config-file>
 
         <hook src="platforms/android/src/main/javascript/useInternalRepo.js"
-              type="before_build"/>
+              type="after_plugin_add"/>
 
         <source-file src="platforms/android/src/main/java/com/gometroapp/uma/GoMetroUmaCordova.java"
                      target-dir="src/com/gometroapp/uma/"/>
