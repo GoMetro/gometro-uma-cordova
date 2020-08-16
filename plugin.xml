@@ -48,29 +48,17 @@
             </feature>
         </config-file>
 
-        <config-file target="*-Info.plist" parent="CFBundleURLTypes">
-            <array>
-                <dict>
-                    <key>LSRequiresIPhoneOS</key>
-                    <true/>
-                </dict>
-                <dict>
-                    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-                    <string>$IOS_USAGE_DESCRIPTION</string>
-                </dict>
-                <dict>
-                    <key>NSLocationAlwaysUsageDescription</key>
-                    <string>$IOS_USAGE_DESCRIPTION</string>
-                </dict>
-                <dict>
-                    <key>NSLocationWhenInUseUsageDescription</key>
-                    <string>$IOS_USAGE_DESCRIPTION</string>
-                </dict>
-                <dict>
-                    <key>NSMotionUsageDescription</key>
-                    <string>$IOS_USAGE_DESCRIPTION</string>
-                </dict>
-            </array>
+        <config-file target="*-Info.plist">
+            <key>LSRequiresIPhoneOS</key>
+            <true/>
+            <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+            <string>$IOS_USAGE_DESCRIPTION</string>
+            <key>NSLocationAlwaysUsageDescription</key>
+            <string>$IOS_USAGE_DESCRIPTION</string>
+            <key>NSLocationWhenInUseUsageDescription</key>
+            <string>$IOS_USAGE_DESCRIPTION</string>
+            <key>NSMotionUsageDescription</key>
+            <string>$IOS_USAGE_DESCRIPTION</string>
         </config-file>
 
         <header-file src="platforms/ios/Sources/GoMetroUmaCordova/GoMetroUmaCordova.h" />
