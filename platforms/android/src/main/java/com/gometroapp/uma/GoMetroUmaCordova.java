@@ -17,7 +17,7 @@ import org.json.JSONException;
 
 import android.util.Log;
 
-import com.gometro.uma.client.GoMetroUma;
+import com.gometroapp.uma.client.GoMetroUma;
 
 public class GoMetroUmaCordova extends CordovaPlugin {
 
