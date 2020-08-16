@@ -48,16 +48,23 @@
             </feature>
         </config-file>
 
-        <config-file target="*-Info.plist">
-            <key>LSRequiresIPhoneOS</key>
+        <config-file target="*-Info.plist" parent="LSRequiresIPhoneOS">
             <true/>
-            <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription">
             <string>$IOS_USAGE_DESCRIPTION</string>
-            <key>NSLocationAlwaysUsageDescription</key>
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
             <string>$IOS_USAGE_DESCRIPTION</string>
-            <key>NSLocationWhenInUseUsageDescription</key>
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
             <string>$IOS_USAGE_DESCRIPTION</string>
-            <key>NSMotionUsageDescription</key>
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="NSMotionUsageDescription">
             <string>$IOS_USAGE_DESCRIPTION</string>
         </config-file>
 
