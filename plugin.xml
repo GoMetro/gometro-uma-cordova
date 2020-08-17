@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="gometro-uma-cordova" version="1.1.1">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="gometro-uma-cordova" version="1.1.5">
     <name>GoMetro UMA</name>
     <author>GoMetro</author>
     <description>Official GoMetro UMA SDK for Cordova</description>
@@ -26,7 +26,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="GoMetroUma">
-                <param name="android-package" value="com.gometro.uma.GoMetroUmaCordova"/>
+                <param name="android-package" value="com.gometroapp.uma.GoMetroUmaCordova"/>
                 <param name="onload" value="true"/>
             </feature>
         </config-file>
@@ -37,7 +37,7 @@
         <source-file src="platforms/android/src/main/java/com/gometroapp/uma/GoMetroUmaCordova.java"
                      target-dir="src/com/gometroapp/uma/"/>
 
-        <framework src="com.gometroapp.uma:gometro-uma-android:1.1.1"/>
+        <framework src="com.gometroapp.uma:gometro-uma-android:1.1.5"/>
         <framework src="io.reactivex.rxjava2:rxandroid:2.1.1"/>
         <framework src="io.reactivex.rxjava2:rxjava:2.2.19"/>
     </platform>
@@ -86,7 +86,7 @@
                 <source url="https://cdn.cocoapods.org/"/>
             </config>
             <pods>
-                <pod name="GoMetroUma" git="https://github.com/GoMetro/gometro-uma-ios.git" tag="1.1.1"/>
+                <pod name="GoMetroUma" git="https://github.com/GoMetro/gometro-uma-ios.git" tag="1.1.5"/>
             </pods>
         </podspec>
     </platform>

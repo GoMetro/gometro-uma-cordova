@@ -39,6 +39,7 @@ public class GoMetroUmaCordova extends CordovaPlugin {
 
         if (action.equals("init")) {
             this.goMetroToken = args.getString(0);
+            this.onResume(false);
 
             callbackContext.sendPluginResult(new PluginResult(Status.OK));
         } else {
@@ -50,6 +51,10 @@ public class GoMetroUmaCordova extends CordovaPlugin {
 
     @Override
     public void onResume(boolean multitasking) {
+
+        if (this.goMetroToken == null) {
+            return;
+        }
 
         Activity activity = this.cordova.getActivity();
         Context context = activity.getApplicationContext();
