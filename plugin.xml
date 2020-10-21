@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="gometro-uma-cordova" version="3.0.0">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="gometro-uma-cordova" version="3.0.1">
     <name>GoMetro UMA</name>
     <author>GoMetro</author>
     <description>Official GoMetro UMA SDK for Cordova</description>
@@ -29,7 +29,7 @@
         <source-file src="platforms/android/src/main/java/com/gometroapp/uma/GoMetroUmaCordova.java"
                      target-dir="src/com/gometroapp/uma/"/>
 
-        <framework src="src/android/plugin.gradle" custom="true" type="gradleReference"/>
+        <framework src="platforms/android/plugin.gradle" custom="true" type="gradleReference"/>
     </platform>
 
 </plugin>
