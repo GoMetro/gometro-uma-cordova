@@ -12,7 +12,7 @@ var handleFailure = function(error, callback) {
     }
 };
 
-var init = function(token, successCallback, failureCallback) {
+var init = function(username, password, successCallback, failureCallback) {
     exec(
         function(result) {
             handleSuccess(result, successCallback)
@@ -22,7 +22,7 @@ var init = function(token, successCallback, failureCallback) {
         },
         "GoMetroUma",
         "init",
-        [token]
+        [username, password]
     );
 };
 
