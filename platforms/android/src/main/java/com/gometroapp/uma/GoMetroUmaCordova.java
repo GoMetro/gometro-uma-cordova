@@ -31,7 +31,7 @@ public class GoMetroUmaCordova extends CordovaPlugin {
 
         if (action.equals("init")) {
             this.goMetroUmaUsername = args.getString(0);
-            this.goMetroUmaPassword = args.getString(0);
+            this.goMetroUmaPassword = args.getString(1);
             this.onResume(false);
 
             callbackContext.sendPluginResult(new PluginResult(Status.OK));
