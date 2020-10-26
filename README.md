@@ -11,7 +11,7 @@ You should init the SDK in the deviceReady function, to make sure the native int
 ```javascript
     function onDeviceReady() {
         var GoMetroUma = cordova.require("gometro-uma-cordova.GoMetroUma");
-        GoMetroUma.init("GOMETRO_UMA_TOKEN");
+        GoMetroUma.init("GOMETRO_UMA_USERNAME", "GOMETRO_UMA_PASSWORD");
         
         ...
     }
