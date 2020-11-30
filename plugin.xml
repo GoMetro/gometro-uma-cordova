@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="gometro-uma-cordova" version="3.0.7">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="gometro-uma-cordova" version="3.0.8">
     <name>GoMetro UMA</name>
     <author>GoMetro</author>
     <description>Official GoMetro UMA SDK for Cordova</description>
