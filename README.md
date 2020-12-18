@@ -2,7 +2,7 @@
 
 Installation
 ```bash
-cordova plugin add gometro-uma-cordova@3.0.9
+cordova plugin add gometro-uma-cordova@3.0.10
 ```
 
 Usage
