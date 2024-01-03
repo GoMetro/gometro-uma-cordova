@@ -28,6 +28,7 @@ public class GoMetroUmaCordova extends CordovaPlugin {
 
     private String goMetroUmaUsername;
     private String goMetroUmaPassword;
+    private String goMetroUmaExternalDeviceId;
 
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         super.initialize(cordova, webView);
@@ -41,6 +42,7 @@ public class GoMetroUmaCordova extends CordovaPlugin {
         if (action.equals("init")) {
             this.goMetroUmaUsername = args.getString(0);
             this.goMetroUmaPassword = args.getString(1);
+            this.goMetroUmaExternalDeviceId = args.getString(2)
             this.onResume(false);
 
             callbackContext.sendPluginResult(new PluginResult(Status.OK));
@@ -60,7 +62,7 @@ public class GoMetroUmaCordova extends CordovaPlugin {
 
         Activity activity = this.cordova.getActivity();
 
-        initialise(activity, this.goMetroUmaUsername, this.goMetroUmaPassword);
+        initialise(activity, this.goMetroUmaUsername, this.goMetroUmaPassword, this.goMetroUmaExternalDeviceId);
     }
 
     @Override
@@ -72,7 +74,7 @@ public class GoMetroUmaCordova extends CordovaPlugin {
         }
     }
 
-    public void initialise(final Activity activity, final String username, final String password) {
+    public void initialise(final Activity activity, final String username, final String password, final String externalDeviceId) {
 
         try {
             Objects.requireNonNull(activity, "A activity must be provided!");
@@ -93,6 +95,7 @@ public class GoMetroUmaCordova extends CordovaPlugin {
                 .sdkVersion(BuildConfig.VERSION_NAME)
                 .trackingEnabledByDefault(false)
                 .username(username)
+                .externalDeviceId(externalDeviceId)
                 .start();
 
             DeviceEventBus.publishSync(new CordovaActivityRefreshed(this));
